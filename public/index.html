@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>News</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+    #header{
+      position:relative;
+      top:0px;
+      width:100%;
+      height:100px;
+      background-color: black; 
+      border-style:dotted; 
+      border-color:black
+    }
+    #articles{
+        display: inline-block;
+        overflow: auto;
+        padding: 10px;
+        width: 60%;
+        height: 700px;
+        background-color: seagreen;
+        border-style: dashed;
+        border-color: white;
+        margin-bottom: 125px;
+        margin-left: 50px;
+    }
+    .footer{
+      position:relative;
+      bottom:0px;
+      width:100%;
+      height:100px;
+      background-color: black;
+    }
+    #comments{
+      position: relative;
+      background-color: red;
+      float:right;
+      width:30%;
+      height: 20%;
+    }
+    textarea, input {
+      display:block;
+      width: 100%;
+       background-color:red;   
+          }
+        input {
+          height:36px;
+          font-size:24px;
+        }
+        textarea{
+          height: 200px;
+          font-size:18px;
+        }
+  </style>
+</head>
+
+<body>
+    <div id="header">
+        <h3 style="text-align:center ; color:white;"><strong>News Scrape</strong></h3>
+    </div>
+    <div >
+        <a  href="/scrape">Scrape articles</a></div>
+    <div id="wrapper">
+<div id="articles">
+</div>
+ <div id="comments"></div>
+</div>
+
+
+    <div class="footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>

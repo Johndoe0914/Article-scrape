@@ -1,0 +1,31 @@
+{
+  "name": "article-scrape",
+  "version": "1.0.0",
+  "description": "Users will be able to leave comments on scraped articles.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johndoe0914/Article-scrape.git"
+  },
+  "keywords": [
+    "scrape",
+    "git",
+    "articles"
+  ],
+  "author": "Jonathan Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Johndoe0914/Article-scrape/issues"
+  },
+  "homepage": "https://github.com/Johndoe0914/Article-scrape#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mongoose": "^5.4.20"
+  }
+}

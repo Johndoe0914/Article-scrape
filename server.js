@@ -19,7 +19,9 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
 //connect to database
-mongoose.connect("mongodb://localhost/ArticleScrape", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/ArticleScrape";
+
+mongoose.connect(MONGODB_URI);
 
 
 //Html Routes
